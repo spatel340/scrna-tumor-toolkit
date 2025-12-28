@@ -1,0 +1,35 @@
+# Data (never commit)
+data/
+
+# Large intermediate objects (never commit)
+results/objects/
+*.h5ad
+
+# Default: ignore results + figures
+results/*
+figures/*
+
+# But DO commit lightweight outputs (tables + key plots)
+!results/tables/
+!results/tables/**
+!results/enrichment/
+!results/enrichment/**
+!figures/enrichment/
+!figures/enrichment/**
+
+# Python
+__pycache__/
+*.pyc
+
+# OS/editor
+.DS_Store
+.vscode/
+.ipynb_checkpoints/
+
+# gseapy / enrichr noise
+results/enrichment/**/gseapy.enrichr*.log
+results/enrichment/**/*.reports.pdf
+
+# gseapy / enrichr noise
+results/enrichment/**/gseapy.enrichr*.log
+results/enrichment/**/*.reports.pdf
